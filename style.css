@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+:root{
+    --dark-blue:#14007a;
+    --blue:#1a009c;
+    --light-blue:rgb(74,225,255);
+    --pink:rgb(255,40,113);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code-editor{
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.code{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow-y: auto;
+    background-color:#0C0032 ;
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+}
+h1{
+    font: 600 1.2rem sans-serif;
+    margin: 1rem 0;
+    color: white;
+}
+h1 > img{
+    width: 1.3rem;
+    margin: 1rem;
+    vertical-align: middle;
+}
+.code textarea{
+    width: 100%;
+    height: calc(100%-4rem);
+    background-color: #2d079e;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--light-blue);
+    resize: vertical;
+    border-radius: 1rem;
+}
+
+.code textarea::-webkit-scrollbar{
+    width: 0.4rem;
+}
+.code textarea::-webkit-scrollbar-thumb{
+   background-color: aqua;
+   border-radius: 0.4rem;
+}
+#result{
+    width: 100%;
+    height: 100%;
+    border:none;
+}
